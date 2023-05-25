@@ -1,0 +1,126 @@
+<html>
+	<head>
+<style>
+.nav{
+background-color:blue;
+}
+.nav a{
+color:white;
+}
+.nav ul{
+margin:0;
+padding:0;
+display:flex;
+list-style:none;
+}
+.nav li{
+padding:10px;
+}
+.nav ul li{
+margin-right:150px;
+}
+.nav a{
+display: block;
+text-decoration: none;
+}
+.img{
+height:80px;
+width:80px;
+margin-left:25px;
+}
+.hp{
+font-size:20px;
+}
+#loginform{
+display:none;
+}
+#loginform:target{
+display:block;
+}
+#closebutton{
+display:none;
+}
+#loginform:target{
+display:inline;
+}
+.style{
+border: 5px solid #ffc0cb;
+padding:20px;
+height: 300px;
+width:300px;
+text-align:center;
+background-color:b0c4de;
+}
+
+#registerform{
+display:none;
+}
+#registerform:target{
+display:block;
+}
+#closebutton{
+display:none;
+}
+#registerform:target{
+display:inline;
+}
+.style1{
+border: 5px solid #ffc0cb;
+padding:20px;
+height: 500px;
+width:400px;
+text-align:center;
+background-color:b0e0e6;
+}
+</style>
+	</head>
+<body>
+<div class="nav">
+	<ul>
+		<img class="img" src="D:\crowd\hospital logo.png">
+		<li><a class="hp" href="#hospital">HOSPITAL.COM</a></li>
+		<li><a href="#Home">Gallery</a></li>
+		<li><a href="#registerform">Register</a></li>
+		<li><a href="#loginform" id="loginbutton">Login</a></li>
+		<li><a href="#Home">Contact Us</a></li>
+	</ul>
+</div><br>
+<div id="loginform">
+	<a href="#">Close</a><br><br>
+	<div class="style">
+		<h2>Login Form</h2>
+			<label for="Username">Username</label><br>
+			<input type="text" id="username" name="username" required><br><br>
+			<label for="Password">Password</label><br>
+			<input type="text" id="password" name="password" required><br><br>
+		<button type="submit">Login</button>
+		<a href="registerform">Register New User</a>
+		<h4>Forget Password? <a href="#">Click Here</a></h4>
+	</div>
+</div>
+
+<div id="registerform">
+	<a href="#">Close</a><br><br>
+	<div class="style1">
+		<h2>User Registratiom Here</h2>
+			<label for="Username">Name</label><br>
+			<input type="text" id="username" name="username" required><br><br>
+			<label for="Username">Email</label><br>
+			<input type="text" id="username" name="username" required><br><br>
+			<label for="Username">Mobile</label><br>
+			<input type="text" id="username" name="username" required><br><br>
+			<label for="Username">Username</label><br>
+			<input type="text" id="username" name="username" required><br><br>
+			
+			<label for="Password">Password</label><br>
+			<input type="text" id="password" name="password" required><br><br>
+			
+			<label for="Password">Confirm Password</label><br>
+			<input type="text" id="password" name="password" required><br><br>
+		<button type="submit">Submit</button>
+		<button type="submit">All ready Register Please Login</button>
+	</div>
+</div>
+</body>
+
+</html>
